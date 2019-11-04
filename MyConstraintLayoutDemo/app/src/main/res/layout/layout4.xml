@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<!--    app:layout_constraintCircleAngle=""-->
+<!--    app:layout_constraintCircleRadius=""-->
+<!--    app:layout_constraintCircle=""-->
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir2"
+        android:src="@color/colorAccent"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="120dp"
+        app:layout_constraintCircle="@id/cir1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:id="@+id/cir3"
+        android:src="@color/colorPrimaryDark"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintCircle="@id/cir2"
+        android:layout_height="30dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
